@@ -1,2 +1,1 @@
-testly
-======
+git init
