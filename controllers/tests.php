@@ -13,7 +13,8 @@ class tests
 		global $request;
 		global $_user;
 		$tests = get_all("SELECT * FROM test NATURAL JOIN user WHERE test.deleted=0");
-
+        $id=$_SESSION['user_id'];
+        $status=get_one("SELECT status FROM USER WHERE user_id='$id'");
 //merge master view which decides which body to put
 		require 'views/master_view.php';
 	}
@@ -26,9 +27,13 @@ class tests
 		require 'views/master_view.php';
 	}
 
-	function edit()
-	{
+	function edit(){
 		global $request;
+        $id=$request->params[0];
+        $test=get_all("SELECT * FROM test WHERE test_id='$id'");
+        $test=$test[0];
+
 		require 'views/master_view.php';
-	}
+
+}
 }
