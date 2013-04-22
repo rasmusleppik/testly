@@ -25,14 +25,16 @@
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
 			border-radius: 5px;
-			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-			box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+			-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+			box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 		}
+
 		.form-signin .form-signin-heading,
 		.form-signin .checkbox {
 			margin-bottom: 10px;
 		}
+
 		.form-signin input[type="text"],
 		.form-signin input[type="password"] {
 			font-size: 16px;
@@ -67,13 +69,14 @@
 		<input name="username" type="text" class="input-block-level" placeholder="Kasutajanimi">
 		<input name="password" type="password" class="input-block-level" placeholder="Parool">
 		<label class="checkbox">
-		<label class="checkbox">
-			<input type="checkbox" value="remember-me"> Jäta mind meelde
-		</label>
-		<button class="btn btn-large btn-primary" type="submit">Logi sisse</button>
+			<label class="checkbox">
+				<input type="checkbox" value="remember-me"> Jäta mind meelde
+			</label>
+			<button class="btn btn-large btn-primary" type="submit">Logi sisse</button>
 	</form>
 
-</div> <!-- /container -->
+</div>
+<!-- /container -->
 
 </body>
 </html>
